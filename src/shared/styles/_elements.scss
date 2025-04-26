@@ -1,0 +1,25 @@
+@import './variables';
+
+.main-title {
+  font-family: "Syne";
+  font-size: clamp(31px, 5vw, 72px);
+  font-weight: bold;
+  color: $title-color;
+}
+
+.title {
+  font-family: "Syne";
+  font-size: clamp(28px, 5vw, 56px);
+  line-height: 110%;
+  font-weight: bold;
+  color: $title-color;
+}
+
+.text {
+  font-family: "Rubik";
+  font-size: 18px;
+  font-weight: 400;
+  color: $text-second-color;
+  letter-spacing: 1px;
+  line-height: 154%;
+}

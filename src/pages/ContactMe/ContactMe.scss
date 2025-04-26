@@ -1,0 +1,210 @@
+@import "../../shared/styles/variables";
+@import "../../shared/styles/mixins";
+
+.contact {
+  padding: 215px 0;
+  @media (max-width: 992px) {
+    padding: 120px 0 80px;
+  }
+  // .contact__body
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 115px;
+    @media (max-width: 992px) {
+      display: block;
+    }
+  }
+  // .contact__subtitle
+  &__subtitle {
+    flex: 0 0 436px;
+    font-family: "Syne";
+    font-size: clamp(28px, 5vw, 64px);
+    font-weight: bold;
+    color: $title-color;
+    @media (max-width: 992px) {
+      margin-bottom: 50px;
+      text-align: center;
+    }
+  }
+  // .contact__form
+  &__form {
+    flex: 0 1 574px;
+    display: flex;
+    flex-direction: column;
+    @media (max-width: 992px) {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+  }
+  // .contact__label
+  &__label {
+    font-family: "Rubik";
+    text-transform: uppercase;
+    font-size: clamp(16px, 5vw, 24px);
+    font-weight: medium;
+    color: $title-color;
+    transition: all 0.3s ease;
+    &.focused {
+      color: $main-color;
+      text-shadow: 0px 0px 10px $btn-bg;
+    }
+  }
+  // .contact__name
+  &__name {
+    background-color: transparent;
+    line-height: 50px;
+    color: $text-main-color;
+    font-size: 26px;
+    border-bottom: 1px solid $text-second-color;
+    margin-bottom: 50px;
+    transition: all 0.3s ease;
+    &:focus {
+      border-color: $main-color;
+    }
+  }
+  // .contact__subject
+  &__subject {
+    background-color: transparent;
+    line-height: 50px;
+    color: $text-main-color;
+    font-size: 24px;
+    border-bottom: 1px solid $text-second-color;
+    margin-bottom: 50px;
+    transition: all 0.3s ease;
+    &:focus {
+      border-color: $main-color;
+    }
+  }
+  // .contact__message
+  &__message {
+    resize: none;
+    min-height: 185px;
+    min-width: 100%;
+    background-color: transparent;
+    color: $text-main-color;
+    font-size: 24px;
+    border-bottom: 1px solid $text-second-color;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    transition: all 0.3s ease;
+    &:focus {
+      border-color: $main-color;
+    }
+  }
+  // .contact__btn
+  &__btn {
+    @include button-base;
+    padding: 11px 17px;
+    font-size: 21px;
+    max-width: 160px;
+    &:disabled {
+      opacity: 0.6;
+      pointer-events: none;
+    }
+  }
+  // .contact__info
+  &__info {
+    display: block;
+  }
+  // .contact__img
+  &__img {
+    max-width: 100%;
+    border-radius: 18px;
+    overflow: hidden;
+    margin-bottom: 100px;
+    img {
+      display: block;
+      width: 100%;
+    }
+    @media (max-width: 768px) {
+      margin-bottom: 40px;
+    }
+  }
+  // .contact__links
+  &__links {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    @media (max-width: 992px) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  // .contact__link
+  &__link {
+    display: block;
+
+    font-family: "Syne";
+    font-size: clamp(18px, 5vw, 24px);
+    font-weight: bold;
+    color: $title-color;
+  }
+  // .contact__mail
+  &__mail {
+    border-bottom: 2px solid $title-color;
+  }
+
+  &__loading {
+  animation: rolling 1s linear infinite;
+  }
+
+  &__label.error {
+    color: red;
+    text-shadow: none;
+  }
+
+  &__name.error,
+  &__subject.error,
+  &__message.error {
+    border-color: red;
+  }
+}
+
+.notification {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 15px 25px;
+  border-radius: 8px;
+  font-size: 15px;
+  z-index: 1000;
+  color: white;
+  animation: fadeInOut 4s ease forwards;
+}
+
+.notification.success {
+  background-color: #4caf50;
+}
+
+.notification.error {
+  background-color: #f44336;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -10px);
+  }
+  10%,
+  90% {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -10px);
+  }
+}
+
+@keyframes rolling {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

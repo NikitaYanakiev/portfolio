@@ -1,0 +1,191 @@
+@import "../../shared/styles/variables";
+
+.footer {
+  padding: 100px 0 80px;
+  background-color: $footer-bg;
+  @media (max-width: 768px) {
+    padding: 50px 0 30px;
+  }
+  // .footer__title
+  &__title {
+    font-family: "Syne";
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    color: $main-color;
+    margin-bottom: 23px;
+    @media (max-width: 768px) {
+      font-size: 18px;
+    }
+  }
+  // .footer__subtitle
+  &__subtitle {
+    font-family: "Syne";
+    font-weight: bold;
+    font-size: 64px;
+    font-size: clamp(24px, 5vw, 64px);
+
+    color: $title-color;
+    text-align: center;
+    margin-bottom: 200px;
+    a {
+      position: relative;
+      &:before {
+        content: "";
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 100%;
+        height: 5px;
+        background-color: $title-color;
+        @media (max-width: 768px) {
+          bottom: -2px;
+          height: 2px;
+        }
+      }
+    }
+    @media (max-width: 992px) {
+      margin-bottom: 100px;
+    }
+    @media (max-width: 768px) {
+      margin-bottom: 50px;
+      span {
+        &:before {
+          bottom: -2px;
+          height: 2px;
+        }
+      }
+    }
+  }
+  // .footer__body
+  &__body {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 75px;
+    @media (max-width: 992px) {
+      justify-content: space-around;
+      gap: 42px;
+    }
+    @media (max-width: 768px) {
+      gap: 0;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin-bottom: 50px;
+    }
+  }
+  // .footer__logo
+  &__logo {
+    max-width: 100px;
+    margin-right: 217px;
+    img {
+      display: block;
+      width: 100%;
+    }
+    @media (max-width: 992px) {
+      margin-right: 0;
+    }
+    @media (max-width: 768px) {
+      max-width: 80px;
+      margin-bottom: 30px;
+    }
+  }
+  // .footer__address
+  &__address {
+    max-width: 285px;
+    font-family: "Syne";
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 150%;
+    margin-right: 80px;
+    color: $text-main-color;
+    @media (max-width: 992px) {
+      margin-right: 0;
+    }
+    @media (max-width: 768px) {
+      margin-bottom: 20px;
+    }
+  }
+  // .footer__contact
+  &__contact {
+    max-width: 286px;
+  }
+  // .footer__phone-number
+  &__phone-number {
+    display: block;
+    font-family: "Syne";
+    font-weight: bold;
+    font-size: 24px;
+    color: $text-main-color;
+    margin-bottom: 16px;
+    @media (max-width: 768px) {
+      margin-bottom: 30px;
+    }
+  }
+  // .footer__socials
+  &__socials {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    @media (max-width: 768px) {
+      justify-content: center;
+      gap: 15px;
+    }
+  }
+  // .footer__socials-item
+  &__socials-item {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 3px;
+    background-color: $icon-bg;
+    transition: all 0.4s ease;
+    &:hover {
+      box-shadow: $main-color 0px 0px 10px 0px;
+      background-color: $main-color;
+      .footer__socials-icon {
+        color: $btn-color;
+      }
+    }
+    @media (max-width: 768px) {
+      width: 35px;
+      height: 35px;
+    }
+  }
+
+  // .footer__socials-icon
+  &__socials-icon {
+    font-size: 16px;
+    color: $footer-bg;
+    transition: all 0.4s ease;
+    @media (max-width: 768px) {
+      font-size: 20px;
+    }
+  }
+  // .footer__line
+  &__line {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #949494;
+    margin-bottom: 36px;
+    @media (max-width: 768px) {
+      margin-bottom: 15px;
+    }
+  }
+  // .footer__licenses
+  &__licenses {
+    text-align: center;
+    font-family: "Syne";
+    font-weight: bold;
+    font-size: 24px;
+    color: $text-main-color;
+    @media (max-width: 768px) {
+      font-size: 16px;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+@import "./variables";
+@import "./elements";
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Syne:wght@400..800&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: "Syne", "Rubik", 'Inter', sans-serif;
+  font-optical-sizing: auto;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+body {
+  background-color: $bg-color;
+}
+
+h1 {
+  font-family: "Montserrat";
+}
+
+.container {
+  padding: 0 15px;
+  max-width: 1146px;
+  margin: 0 auto;
+
+  @media (max-width: 768px) {
+    padding: 0 15px;
+  }
+}
