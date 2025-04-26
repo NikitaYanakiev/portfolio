@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.615775b7.css",
+    "main.js": "/portfolio/static/js/main.d9915bf7.js",
+    "static/media/pizza_shop.png": "/portfolio/static/media/pizza_shop.1b0a4401f18338f68862.png",
+    "static/media/cyber_jungles.png": "/portfolio/static/media/cyber_jungles.5d51b58900e4591a48df.png",
+    "static/media/creative_studio.png": "/portfolio/static/media/creative_studio.041bbac700b12fcb2b0b.png",
+    "static/media/atom.png": "/portfolio/static/media/atom.223065a003f3e84e303a.png",
+    "static/media/crappo.png": "/portfolio/static/media/crappo.81d6f50fe000e771d8e0.png",
+    "static/media/aperture.png": "/portfolio/static/media/aperture.50b6a9bbf2e46df23e7b.png",
+    "static/media/ps_plus.png": "/portfolio/static/media/ps_plus.1ada9ee931844655a4bc.png",
+    "static/media/healthy_food.png": "/portfolio/static/media/healthy_food.1bdb69a573f348f55878.png",
+    "static/media/plonq.png": "/portfolio/static/media/plonq.989c3d84af018d150859.png",
+    "static/media/furniture.png": "/portfolio/static/media/furniture.d2600af066a6e94202da.png",
+    "static/media/contact.jpg": "/portfolio/static/media/contact.a08331f64f31acc858aa.jpg",
+    "static/media/photo_03.png": "/portfolio/static/media/photo_03.7b6bff7af761323f29be.png",
+    "static/media/shine.png": "/portfolio/static/media/shine.5b2cc4d2feca93d42e7c.png",
+    "static/media/photo_01.jpg": "/portfolio/static/media/photo_01.c55b06747928ac7c358b.jpg",
+    "static/media/photo_02.jpg": "/portfolio/static/media/photo_02.567a12f645225aabfb2a.jpg",
+    "static/media/logo_white.png": "/portfolio/static/media/logo_white.b7a533978248128912d2.png",
+    "index.html": "/portfolio/index.html",
+    "static/media/arrow.svg": "/portfolio/static/media/arrow.8ae00d993dbbdb7815bbbdae70b27ff6.svg",
+    "main.615775b7.css.map": "/portfolio/static/css/main.615775b7.css.map",
+    "main.d9915bf7.js.map": "/portfolio/static/js/main.d9915bf7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.615775b7.css",
+    "static/js/main.d9915bf7.js"
+  ]
+}
