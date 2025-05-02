@@ -20,7 +20,7 @@ const ContactMe = () => {
     subject: false,
     message: false,
   });
-  const [notification, setNotification] = useState(null); // 🌟
+  const [notification, setNotification] = useState(null); 
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -146,7 +146,7 @@ const ContactMe = () => {
               onChange={handleChange}
             ></textarea>
 
-            <button type="submit" className="contact__btn" disabled={isSending}>
+            <button type="submit" className="contact__btn hover-target" disabled={isSending}>
               {isSending ? <AiOutlineLoading3Quarters className="contact__loading"/> : "Send"}
             </button>
           </form>

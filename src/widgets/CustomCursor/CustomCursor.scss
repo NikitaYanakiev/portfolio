@@ -1,0 +1,36 @@
+@import "../../shared/styles/variables";
+
+.cursor-dot,
+.cursor-outline {
+  position: fixed;
+  pointer-events: none;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+
+.cursor-dot {
+  width: 6px;
+  height: 6px;
+  background: $main-color;
+  transition: background 0.2s, width 0.2s, height 0.2s;
+}
+
+.cursor-outline {
+  width: 30px;
+  height: 30px;
+  border: 1px solid $main-color;
+  opacity: 0.5;
+  transition: transform 0.2s ease, border 0.2s ease;
+}
+
+.cursor-dot.hovered {
+  background: white;
+  opacity: 0.5;
+  width: 20px;
+  height: 20px;
+}
+
+.cursor-outline.hovered {
+  border-color: white;
+}

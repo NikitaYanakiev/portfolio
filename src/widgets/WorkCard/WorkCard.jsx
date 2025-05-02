@@ -2,6 +2,7 @@ import "./WorkCard.scss";
 import { FiArrowUpRight } from "react-icons/fi";
 import { TbBrandGithubFilled } from "react-icons/tb";
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const WorkCard = ({ name, type, image, link, github }) => {
   const [isTouchDevice, setIsTouchDevice] = useState(false);
@@ -25,12 +26,12 @@ const WorkCard = ({ name, type, image, link, github }) => {
       >
         <img src={image} alt={name} />
         <div className="work-card__hover">
-          <a href={link} target="_blank" rel="noreferrer" className="work-card__link-follow">
+          <Link to={link} target="_blank" rel="noreferrer" className="work-card__link-follow">
             <FiArrowUpRight className="follow" />
-          </a>
-          <a href={github} target="_blank" rel="noreferrer" className="work-card__link-info">
+          </Link>
+          <Link to={github} target="_blank" rel="noreferrer" className="work-card__link-info">
             <TbBrandGithubFilled className="info" />
-          </a>
+          </Link>
         </div>
       </div>
 

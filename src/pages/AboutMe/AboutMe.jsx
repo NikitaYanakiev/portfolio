@@ -3,6 +3,7 @@ import "./AboutMe.scss";
 
 import photo_01 from "../../shared/assets/images/about/photo_01.jpg";
 import photo_02 from "../../shared/assets/images/about/photo_02.jpg";
+import { Link } from "react-router-dom";
 
 const AboutMe = () => {
   return (
@@ -36,18 +37,18 @@ const AboutMe = () => {
 
         <h4 className="about-me__socials-title">Follow me on:</h4>
         <div className="about-me__socials">
-          <a href="https://www.linkedin.com/in/nikita-yanakiiev-a0273b260/" target="_blank" rel="noreferrer" className="about-me__link">
+          <Link to="https://www.linkedin.com/in/nikita-yanakiiev-a0273b260/" target="_blank" rel="noreferrer" className="about-me__link">
             LinkedIn
-          </a>
-          <a href="https://www.facebook.com/nikita.yanakiev.5" target="_blank" rel="noreferrer" className="about-me__link">
+          </Link>
+          <Link to="https://www.facebook.com/nikita.yanakiev.5" target="_blank" rel="noreferrer" className="about-me__link">
             Facebook
-          </a>
-          <a href="https://t.me/Nikita_Yanakiev" target="_blank" rel="noreferrer" className="about-me__link">
+          </Link>
+          <Link to="https://t.me/Nikita_Yanakiev" target="_blank" rel="noreferrer" className="about-me__link">
             Telegram
-          </a>
-          <a href="https://www.instagram.com/nik.yankv/" target="_blank" rel="noreferrer" className="about-me__link">
+          </Link>
+          <Link to="https://www.instagram.com/nik.yankv/" target="_blank" rel="noreferrer" className="about-me__link">
             Instagram
-          </a>
+          </Link>
         </div>
       </div>
     </section>

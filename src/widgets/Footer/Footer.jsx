@@ -7,6 +7,7 @@ import { FaLinkedinIn } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa6";
 
 import "./Footer.scss";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -31,17 +32,17 @@ const Footer = () => {
           <div className="footer__contact">
             <a href="tel:+4915201357760" className="footer__phone-number">+49 (1520)-135-7760</a>
             <div className="footer__socials">
-              <div className="footer__socials-item">
+              <Link to="https://t.me/Nikita_Yanakiev" className="footer__socials-item" target="_blank" rel="noreferrer">
                 <FaTelegramPlane className="footer__socials-icon" />
-              </div>
+              </Link>
 
-              <div className="footer__socials-item">
+              <Link to="https://www.linkedin.com/in/nikita-yanakiiev-a0273b260/" className="footer__socials-item" target="_blank" rel="noreferrer">
                 <FaLinkedinIn className="footer__socials-icon" />
-              </div>
+              </Link>
 
-              <div className="footer__socials-item">
+              <Link to="https://www.instagram.com/nik.yankv/" className="footer__socials-item" target="_blank" rel="noreferrer">
                 <FaInstagram className="footer__socials-icon" />
-              </div>
+              </Link>
             </div>
           </div>
         </div>
