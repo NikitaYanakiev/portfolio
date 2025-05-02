@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.615775b7.css",
-    "main.js": "/portfolio/static/js/main.d9915bf7.js",
+    "main.css": "/portfolio/static/css/main.96eff7c0.css",
+    "main.js": "/portfolio/static/js/main.c0b574d2.js",
     "static/media/pizza_shop.png": "/portfolio/static/media/pizza_shop.1b0a4401f18338f68862.png",
     "static/media/cyber_jungles.png": "/portfolio/static/media/cyber_jungles.5d51b58900e4591a48df.png",
     "static/media/creative_studio.png": "/portfolio/static/media/creative_studio.041bbac700b12fcb2b0b.png",
@@ -19,12 +19,12 @@
     "static/media/photo_02.jpg": "/portfolio/static/media/photo_02.567a12f645225aabfb2a.jpg",
     "static/media/logo_white.png": "/portfolio/static/media/logo_white.b7a533978248128912d2.png",
     "index.html": "/portfolio/index.html",
-    "static/media/arrow.svg": "/portfolio/static/media/arrow.8ae00d993dbbdb7815bbbdae70b27ff6.svg",
-    "main.615775b7.css.map": "/portfolio/static/css/main.615775b7.css.map",
-    "main.d9915bf7.js.map": "/portfolio/static/js/main.d9915bf7.js.map"
+    "static/media/arrow.svg": "/portfolio/static/media/arrow.38cdd181a2f05b852e7047c84738cea3.svg",
+    "main.96eff7c0.css.map": "/portfolio/static/css/main.96eff7c0.css.map",
+    "main.c0b574d2.js.map": "/portfolio/static/js/main.c0b574d2.js.map"
   },
   "entrypoints": [
-    "static/css/main.615775b7.css",
-    "static/js/main.d9915bf7.js"
+    "static/css/main.96eff7c0.css",
+    "static/js/main.c0b574d2.js"
   ]
 }
